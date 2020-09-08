@@ -1,4 +1,4 @@
-# Me Escolhe
+# Choose Me
 
 System for managing vacancies in projects for the computer science course at UFCG.
 
@@ -95,4 +95,4 @@ or
 ## Developers 
 
 [<img src="https://avatars0.githubusercontent.com/u/20846737?s=460&u=74713b81f37fc0c5a42ae203459a9824505cba20&v=4" width=115 > <br> <sub> Sheilla da Silva </sub>](https://github.com/sheyslong) |
-| :---: | 
+| :---: |
