@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Me Escolhe
 
-## Available Scripts
+System for managing vacancies in projects for the computer science course at UFCG.
 
-In the project directory, you can run:
+> Project Status: In development :warning:
 
-### `yarn start`
+## Application sources
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Font
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+:pencil2: [In Definition]
 
-### `yarn test`
+### Colors
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:art: [Color pattern](/src/styles/colors)
 
-### `yarn build`
+## Application Structure
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:green_book: [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Application Documentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:books: [Storybook](https://storybook.js.org/)
 
-### `yarn eject`
+## Test
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Unit Test
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+:chart_with_downwards_trend: [Jest](https://jestjs.io/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Test End-to-End
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:chart_with_downwards_trend: [Cypress](https://www.cypress.io/)
 
-## Learn More
+## Application Styling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+:straight_ruler: [Styled Component](https://styled-components.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Application Routing
 
-### Code Splitting
+:vertical_traffic_light:[React Router Dom](https://reactrouter.com/web/guides/quick-start)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Application Install
 
-### Analyzing the Bundle Size
+```bash
+    yarn install
+```
+or 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```bash
+    npm install
+```
+## Applicantion Init
 
-### Making a Progressive Web App
+```bash
+    yarn start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+or 
 
-### Advanced Configuration
+```bash
+    npm start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Storybook Init
 
-### Deployment
+```bash
+    yarn storybook
+```
+or 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```bash
+    npm run storybook
+```
+## Jest Init
 
-### `yarn build` fails to minify
+```bash
+    yarn test
+```
+or 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```bash
+    npm run test
+```
+## Jest Coverage Init
+
+```bash
+    yarn test:coverage
+```
+or 
+
+```bash
+    npm run test:coverage
+```
+## Developers 
+
+[<img src="https://avatars0.githubusercontent.com/u/20846737?s=460&u=74713b81f37fc0c5a42ae203459a9824505cba20&v=4" width=115 > <br> <sub> Sheilla da Silva </sub>](https://github.com/sheyslong) |
+| :---: | 
