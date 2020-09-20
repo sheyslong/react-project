@@ -1,8 +1,15 @@
 import React from 'react';
-import { } from './styled';
+import { LinkAton } from './styled';
 
-export const Link = ({...props}) => {
-  return <></>;
+export const Link = (props) => {
+  return (
+    <LinkAton 
+      href={props.url}
+      target={props.target}
+    >
+      {props.text}
+    </LinkAton>
+  )
 }
 
 export default Link;
