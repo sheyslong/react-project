@@ -5,7 +5,6 @@ import 'antd/dist/antd.css';
 import { Button } from 'antd';
 
 export const ButtonAtom = styled(Button)`
-    font-family: 'Raleway-Regular';
     background-color: ${ colors.pink };
     color: ${ colors.white };
     border-color: ${ colors.pink };
