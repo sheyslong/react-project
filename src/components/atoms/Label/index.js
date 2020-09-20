@@ -1,8 +1,8 @@
 import React from 'react';
-import { } from './styled';
+import { LabelAton } from './styled';
 
-export const Label = ({...props}) => {
-  return <></>;
+export const Label = (props) => {
+return <LabelAton level={props.level}>{props.text}</LabelAton>
 }
 
 export default Label;
