@@ -14,6 +14,7 @@ export const ButtonAtom = styled(Button)`
         background-color: ${ colors.pink };    
         opacity: 0.8;
         color: ${ colors.white };
+        border-color: ${ colors.pink };
     }
     &:focus {
         background-color: ${ colors.pink };    

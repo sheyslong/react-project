@@ -1,8 +1,8 @@
 import React from 'react';
-import { } from './styled';
+import { TitleAtom } from './styled';
 
-export const Title = ({...props}) => {
-  return <></>;
+export const Title = ({text, ...props}) => {
+  return <TitleAtom {...props}>{text}</TitleAtom>
 }
 
-export default Title;
+export default Title

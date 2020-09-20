@@ -1,8 +1,8 @@
 import React from 'react';
-import { } from './styled';
+import { TextAtom } from './styled';
 
-export const Text = ({...props}) => {
-  return <></>;
+export const Text = ({text, ...props}) => {
+  return <TextAtom {...props}>{text}</TextAtom>;
 }
 
 export default Text;
