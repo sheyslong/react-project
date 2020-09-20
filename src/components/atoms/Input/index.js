@@ -1,8 +1,8 @@
 import React from 'react';
-import { } from './styled';
+import { InputAtom } from './styled';
 
 export const Input = ({...props}) => {
-  return <></>;
+  return <InputAtom placeholder="Texto aqui"/>;
 }
 
 export default Input;

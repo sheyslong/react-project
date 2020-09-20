@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../components/atoms'
+import { Button, Input } from '../components/atoms'
 
 function Pages() {
   return (
@@ -12,6 +12,8 @@ function Pages() {
       }}
     >
       <Button>Primary</Button>
+      <div>.</div>
+      <Input />
     </div>
   )
 }
