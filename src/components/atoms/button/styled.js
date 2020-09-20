@@ -8,7 +8,7 @@ export const ButtonAtom = styled(Button)`
     font-family: 'Raleway-Regular';
     background-color: ${ colors.pink };
     color: ${ colors.white };
-    border-colors: ${ colors.pink };
+    border-color: ${ colors.pink };
     cursor: pointer;
     border-radius: 40px 40px 40px 40px;
     &:hover {
@@ -19,7 +19,7 @@ export const ButtonAtom = styled(Button)`
     &:focus {
         background-color: ${ colors.pink };    
         opacity: 0.8;
-        border-colors: ${ colors.pink };
+        border-color: ${ colors.pink };
         color: ${ colors.white } ;      
     }
     &:click {
