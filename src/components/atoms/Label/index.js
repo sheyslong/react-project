@@ -1,8 +1,8 @@
 import React from 'react';
 import { LabelAtom } from './styled';
 
-export const Label = ({text, ...props}) => {
-  return <LabelAtom {...props}>{text}</LabelAtom>
+export const Label = ({...props}) => {
+  return <LabelAtom {...props}/>
 }
 
 export default Label;
