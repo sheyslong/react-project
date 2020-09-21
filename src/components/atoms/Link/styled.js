@@ -5,6 +5,5 @@ import { Typography } from 'antd';
 
 const { Link } = Typography;
 
-export const LinkAton = styled(Link)`
-    
+export const LinkAtom = styled(Link)`
 `;
