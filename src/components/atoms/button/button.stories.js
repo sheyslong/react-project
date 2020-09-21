@@ -6,14 +6,13 @@ export default {
   component: Button,
 };
 
-export const ToStorybookButton = () => <Button type="primary">Primary</Button>;
+export const ToStorybookButton = () => <>
+                                        <Button type="primary">Primary</Button>
+                                        <Button type="dashed">Dashed</Button>
+                                        <Button type="text">Text</Button>
+                                        <Button type="link">Link</Button>
+                                        </>;
 
 ToStorybookButton.story = {
-  name: 'Button Default',
-};
-
-export const ToStorybookButton2 = () => <Button type="danger">Primary</Button>;
-
-ToStorybookButton2.story = {
-  name: 'Button Default 2',
+  name: 'Button Type',
 };
