@@ -6,4 +6,5 @@ import { Typography } from 'antd';
 const { Link } = Typography;
 
 export const LinkAtom = styled(Link)`
+    color: ${ colors.pink } !important;
 `;

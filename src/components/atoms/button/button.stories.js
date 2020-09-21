@@ -8,9 +8,6 @@ export default {
 
 export const ToStorybookButton = () => <>
                                         <Button type="primary">Primary</Button>
-                                        <Button type="dashed">Dashed</Button>
-                                        <Button type="text">Text</Button>
-                                        <Button type="link">Link</Button>
                                         </>;
 
 ToStorybookButton.story = {
