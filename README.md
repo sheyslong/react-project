@@ -1,5 +1,5 @@
 # Me Escolhe
-[<img src="/src/styles/images/Logo.png" width=115 >]
+<img src="src/styles/images/Logo.png" >
 
 Sistema para gerenciamento de vagas in projeto para o curso de ciência de computação para UFCG.
 
