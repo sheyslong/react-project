@@ -1,4 +1,4 @@
-<img src="/src/styles/images/logo/Logo-me-escolhe-v7.png" width=300 >
+<img src="/src/styles/images/logo/Logo-me-escolhe-v7.png" width=800 >
 
 Sistema para gerenciamento de vagas in projeto para o curso de ciência de computação para UFCG.
 
