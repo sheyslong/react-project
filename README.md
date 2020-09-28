@@ -1,6 +1,8 @@
 <img src="/src/styles/images/logo/Logo-me-escolhe-v7.png" width=800 >
 
-Sistema para gerenciamento de vagas in projeto para o curso de ciência de computação para UFCG.
+É uma plataforma para unificar e disponibilizar informações de processos seletivos para diversas atuações dentro da UFCG!
+
+O aluno da UFCG poderá cadastrar-se na plataforma e começar sua busca pelas melhores oportunidades acadêmicas!
 
 > Status do Projeto: Em desenvolvimento :warning:
 
