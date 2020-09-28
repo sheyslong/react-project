@@ -47,10 +47,7 @@
     "@storybook/node-logger": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
-<<<<<<< HEAD
     "@testing-library/react": "^9.5.0",
-=======
->>>>>>> 469acc74ece7cbdb6261c27d271e1a3c13078413
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.1.0",
     "react-is": "^16.13.1"
