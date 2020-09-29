@@ -8,6 +8,10 @@ O aluno da UFCG poderá cadastrar-se na plataforma e começar sua busca pelas me
 
 ## Recursos da Aplication
 
+## UX e UI
+
+:space_invader: [Marvel](https://marvelapp.com/prototype/890h8h8)
+
 ### Fonte
 
 :pencil2: Principal: [Poppins](https://fonts.google.com/specimen/Poppins)
