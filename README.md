@@ -8,7 +8,7 @@ O aluno da UFCG poderá cadastrar-se na plataforma e começar sua busca pelas me
 
 ## Recursos da Aplication
 
-## UX e UI
+### UX e UI
 
 :space_invader: [Marvel](https://marvelapp.com/prototype/890h8h8)
 
