@@ -4,5 +4,6 @@ export default {
     darkMagenta: '#88304E',
     pink: '#E23E57',
     white: '#FFFFFF',
-    gray: '#EEEEEE'
+    ice: '#EEEEEE',
+    gray: '#cccccc',
 }
