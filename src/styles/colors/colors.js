@@ -6,4 +6,24 @@ export default {
     white: '#FFFFFF',
     ice: '#EEEEEE',
     gray: '#cccccc',
+    fullstack: {
+        primary: "#6B2CF5",
+        secundary: "#D450E6",
+        icon: "#ef7dff"
+    },
+    frontEnd: {
+        primary: "#FF4BA7",
+        secundary: "#FFDA64",
+        icon: "#ffeeb6"
+    },
+    backEnd: {
+        primary: "#2F80FF",
+        secundary: "#3CCBFF",
+        icon: "#9de5ff"
+    },
+    tester: {
+        primary: "#6F085A",
+        secundary: "#FE3D6C",
+        icon: "#ff82ab"
+    },
 }

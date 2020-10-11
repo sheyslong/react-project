@@ -21,9 +21,7 @@ export const CardDetails = ({title, job, description, color, labName, ...props})
             <TitleComponent level={5}>{ job }</TitleComponent>
             <Text>{ description }</Text>
             <Legend>
-                <ButtonLink>
-                    <CloseOutlined />
-                </ButtonLink>
+                <ButtonLink><CloseOutlined /></ButtonLink>
                 <ButtonLink>Ver</ButtonLink>
             </Legend>
         </CardMolecule>

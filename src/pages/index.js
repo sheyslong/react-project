@@ -1,8 +1,12 @@
 import React from 'react'
 import { Button, Input, Label, Link, Title, Text } from '../components/atoms'
 import { CardError, CardSelection, CardDetails } from '../components/molecules'
+import { colors } from '../styles/colors';
 
 function Pages() {
+  const title="Me Escolhe" 
+  const description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." 
+  const labName="UFCG"
   return (
     <div 
       style={{
@@ -38,17 +42,18 @@ function Pages() {
       />
       <CardError title="Ops! Tivemos um problema com o Serviço." message="Aguarde e tente novamente em alguns instantes!"/>
       <div>.</div>
-      <CardSelection 
-        title="Nome do Projeto" 
-        job="Vaga" 
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." labName="Nome do Laboratório"
-      />
-      <div>.</div>
       <CardDetails
         title="Nome do Projeto" 
         job="Vaga" 
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." labName="Nome do Laboratório"
       />
+      <div>.</div>
+      <div>
+        <CardSelection title={ title } job={ "FullStack" } description={ description } labName={ labName } colors={ colors.fullstack }/>
+        <CardSelection title={ title } job={ "Front-end" } description={ description } labName={ labName } colors={ colors.frontEnd }/>
+        <CardSelection title={ title } job={ "Back-end" } description={ description } labName={ labName } colors={ colors.backEnd }/>
+        <CardSelection title={ title } job={ "Tester" } description={ description } labName={ labName } colors={ colors.tester } />
+      </div>
       <div>.</div>
     </div>
   )

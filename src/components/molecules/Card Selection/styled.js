@@ -1,13 +1,14 @@
-import styled from 'styled-components';
-import 'antd/dist/antd.css';
-import { colors } from '../../../styles/colors';
+import styled from 'styled-components'
+import 'antd/dist/antd.css'
+import { colors } from '../../../styles/colors'
 import { Title, Text, Label } from '../../atoms'
-import { Card } from 'antd';
+import { Card } from 'antd'
+import { Avatar } from 'antd'
 
 export const CardMolecule = styled(Card)`
     width: 300;
     margin-top: 16;
-    background-color: ${ ({ color }) => color };
+    background-image: linear-gradient(240deg, ${ ({primary}) => primary }, ${ ({secundary}) => secundary });
 `;
 
 export const TitleComponent = styled(Title)`
@@ -21,8 +22,8 @@ export const TextComponent = styled(Text)`
     color: ${ colors.white } !important;
 `;
 
-export const LabelComponent = styled(Label)`
-    color: ${ colors.gray } !important;
+export const LabNameComponent = styled(Label)`
+    color: ${ colors.white } !important;
 `;
 
 export const Header = styled.div`
@@ -40,4 +41,9 @@ export const DataHeader = styled.div`
 export const Legend = styled.div`
     display: flex;
     flex-direction: row-reverse;
+`;
+
+export const LogoComponent = styled(Avatar)`
+    background: none;
+    font-size: 54px !important;
 `;
