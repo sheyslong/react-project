@@ -13,35 +13,35 @@ const labName="UFCG"
 
 export const ToStorybookSelectionAll= () => 
   <div>
-    <CardSelection title={ title } job={ "FullStack" } description={ description } labName={ labName } colors={ colors.fullstack }/>
-    <CardSelection title={ title } job={ "Front-end" } description={ description } labName={ labName } colors={ colors.frontEnd }/>
-    <CardSelection title={ title } job={ "Back-end" } description={ description } labName={ labName } colors={ colors.backEnd }/>
-    <CardSelection title={ title } job={ "Tester" } description={ description } labName={ labName } colors={ colors.tester } />
+    <CardSelection projectName={ title } job={ "FullStack" } description={ description } labName={ labName } colors={ colors.fullstack }/>
+    <CardSelection projectName={ title } job={ "Front-end" } description={ description } labName={ labName } colors={ colors.frontEnd }/>
+    <CardSelection projectName={ title } job={ "Back-end" } description={ description } labName={ labName } colors={ colors.backEnd }/>
+    <CardSelection projectName={ title } job={ "Tester" } description={ description } labName={ labName } colors={ colors.tester } />
   </div>
 
 ToStorybookSelectionAll.story = {
   name: 'Card Selection All',
 };
-export const ToStorybookSelectionFull= () => <CardSelection title={ title } job={ "FullStack" } description={ description } labName={ labName } colors={ colors.fullstack }/>
+export const ToStorybookSelectionFull= () => <CardSelection projectName={ title } job={ "FullStack" } description={ description } labName={ labName } colors={ colors.fullstack }/>
 
 ToStorybookSelectionFull.story = {
   name: 'Card Selection Job FullStack',
 };
 
-export const ToStorybookSelectionFront = () => <CardSelection title={ title } job={ "Front-end" } description={ description } labName={ labName } colors={ colors.frontEnd }/>
+export const ToStorybookSelectionFront = () => <CardSelection projectName={ title } job={ "Front-end" } description={ description } labName={ labName } colors={ colors.frontEnd }/>
 
 ToStorybookSelectionFront.story = {
   name: 'Card Selection Job Front-End',
 };
 
 
-export const ToStorybookSelectionBack = () => <CardSelection title={ title } job={ "Back-end" } description={ description } labName={ labName } colors={ colors.backEnd }/>
+export const ToStorybookSelectionBack = () => <CardSelection projectName={ title } job={ "Back-end" } description={ description } labName={ labName } colors={ colors.backEnd }/>
 
 ToStorybookSelectionBack.story = {
   name: 'Card Selection Job Back-End',
 };
 
-export const ToStorybookSelectionTester = () => <CardSelection title={ title } job={ "Tester" } description={ description } labName={ labName } colors={ colors.tester } />
+export const ToStorybookSelectionTester = () => <CardSelection projectName={ title } job={ "Tester" } description={ description } labName={ labName } colors={ colors.tester } />
 
 ToStorybookSelectionTester.story = {
   name: 'Card Selection Job Tester',

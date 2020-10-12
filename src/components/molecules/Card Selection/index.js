@@ -1,54 +1,48 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { 
     CardMolecule,
     TitleComponent, 
-    TextComponent, 
+    Description, 
     LabNameComponent, 
     Header, 
     DataHeader, 
     Legend, 
     LogoComponent } from './styled'
 import Icon from '@ant-design/icons'
-import { CardDetails } from '../../molecules'
 import {ReactComponent as Logo} from '../../../styles/images/logo/Logo.svg'
 
-export const CardSelection = ({title, job, description, colors, labName, ...props}) => {
-    const [open, setOpen] = useState(false)
+export const CardSelection = ({projectName, job, description, colors, labName, ...props}) => {
     return <div>
-        { open ?
-           <CardDetails /> :
-            <CardMolecule
-                hoverable
-                primary={ colors.primary }
-                secundary={ colors.secundary }
-                {...props}
-                onClick={() => setOpen(true)}
-            >
-                <Header>
-                    <LogoComponent 
-                        size={64} 
-                        icon={
-                            <Icon component={Logo} style={{ color: colors.icon }}/>
-                        } />
-                    <DataHeader>
-                        <TitleComponent 
-                            level={3}>{ title }
-                        </TitleComponent>
-                        <TitleComponent 
-                            level={5}>{ job }
-                        </TitleComponent>
-                    </DataHeader>            
-                </Header>
-                <TextComponent 
-                    ellipsis={{ rows: 1, expandable: true, symbol: ' ' }}> 
-                    { description }
-                </TextComponent>
-                <Legend>
-                    <LabNameComponent>{ labName }</LabNameComponent> 
-                </Legend>
-            </CardMolecule>
-        }
-    </div>;
+        <CardMolecule
+            hoverable
+            primary={ colors.primary }
+            secundary={ colors.secundary }
+            {...props}
+        >
+            <Header>
+                <LogoComponent 
+                    size={64} 
+                    icon={
+                        <Icon component={Logo} style={{ color: colors.icon }}/>
+                    } />
+                <DataHeader>
+                    <TitleComponent 
+                        level={3}>{ projectName }
+                    </TitleComponent>
+                    <TitleComponent 
+                        level={5}>{ job }
+                    </TitleComponent>
+                </DataHeader>            
+            </Header>
+            <Description 
+                ellipsis={{ rows: 1, expandable: true, symbol: ' ' }}> 
+                { description }
+            </Description>
+            <Legend>
+                <LabNameComponent>{ labName }</LabNameComponent> 
+            </Legend>
+        </CardMolecule>
+  </div>;
 };
 
 export default CardSelection;

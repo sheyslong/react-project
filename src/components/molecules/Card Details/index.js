@@ -5,7 +5,7 @@ import { Avatar } from 'antd'
 import { UserOutlined, CloseOutlined } from '@ant-design/icons'
 import { TitleComponent, Header, DataHeader, Legend } from './styled'
 
-export const CardDetails = ({title, job, description, color, labName, ...props}) => {
+export const CardDetails = ({projectName, job, description, color, labName, ...props}) => {
   return <>
         <CardMolecule
             hoverable
@@ -14,7 +14,7 @@ export const CardDetails = ({title, job, description, color, labName, ...props})
             <Header>
                 <Avatar size={64} icon={<UserOutlined />} />
                 <DataHeader>
-                    <TitleComponent level={2}>{ title }</TitleComponent>
+                    <TitleComponent level={2}>{ projectName }</TitleComponent>
                     <TitleComponent level={5}>{ labName }</TitleComponent>
                 </DataHeader>            
             </Header>

@@ -18,7 +18,7 @@ export const TitleComponent = styled(Title)`
     margin-inline-start: 16px !important;
 `;
 
-export const TextComponent = styled(Text)`
+export const Description = styled(Text)`
     color: ${ colors.white } !important;
 `;
 
