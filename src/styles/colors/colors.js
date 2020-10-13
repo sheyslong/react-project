@@ -26,4 +26,24 @@ export default {
         secundary: "#FE3D6C",
         icon: "#ff82ab"
     },
+    progress: {
+        classified: {
+            init: "#00FFED",
+            final: "#00B8BA",
+        },
+        progress: { 
+            init: "#FFCF1B",
+            final: "#FF881B",
+        },
+        declassified: {
+            init: "#FF512F",
+            final: "#C70030",
+        },
+    },
+    phase: {
+        progress: "#FFDA64",
+        classified: "#B3EB50",
+        declassified: "#6F085A",
+        noProgress: "#cccccc",
+    }
 }

@@ -1,0 +1,24 @@
+import React from 'react'
+import { Title } from '../../atoms'
+import { ProgressComponent, Graph } from './styled'
+
+export const Progress = ({ color, percent, phase, message, status}) => {
+    return <ProgressComponent>
+        <Graph 
+            type="circle"
+            strokeColor={{
+                '0%': color.init,
+                '100%': color.final,
+            }}
+            width={ 200 }
+            percent={ percent }
+            format={() => <>
+                    <Title level={2}>{ "Fase " + phase }</Title>
+                    <Title level={5}>{ message }</Title>
+                </> 
+            }
+            status={ status }/>
+    </ProgressComponent>
+}
+
+export default Progress;

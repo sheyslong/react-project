@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Input, Label, Link, Title, Text } from '../components/atoms'
-import { CardError, CardSelection, CardDetails } from '../components/molecules'
+import { CardError, CardSelection, CardDetails, Progress } from '../components/molecules'
 import { colors } from '../styles/colors';
 
 function Pages() {
@@ -53,6 +53,12 @@ function Pages() {
         <CardSelection projectName={ title } job={ "Front-end" } description={ description } labName={ labName } colors={ colors.frontEnd }/>
         <CardSelection projectName={ title } job={ "Back-end" } description={ description } labName={ labName } colors={ colors.backEnd }/>
         <CardSelection projectName={ title } job={ "Tester" } description={ description } labName={ labName } colors={ colors.tester } />
+      </div>
+      <div>.</div>
+      <div>
+        <Progress color={ colors.progress.progress } percent={33} message="Em andamento" phase={1} status="active"/>
+        <Progress color={ colors.progress.classified } percent={33} message="Passou" phase={1} status="sucess"/>
+        <Progress color={ colors.progress.declassified } percent={66} message="Não passou" phase={2} status="exception"/>
       </div>
       <div>.</div>
     </div>
