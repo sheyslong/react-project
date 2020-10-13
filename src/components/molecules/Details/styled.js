@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import 'antd/dist/antd.css';
 import { Title } from '../../atoms'
-import { Card } from 'antd';
+import { Modal } from 'antd';
 
-export const CardMolecule = styled(Card)`
+export const ModalMolecule = styled(Modal)`
     width: 300;
     margin-top: 16;
 `;
@@ -29,4 +29,5 @@ export const DataHeader = styled.div`
 export const Legend = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 `;

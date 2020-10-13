@@ -1,14 +1,20 @@
 import React from 'react'
-import { CardMolecule } from './styled'
 import { Text, ButtonLink } from '../../atoms'
 import { Avatar } from 'antd'
 import { UserOutlined, CloseOutlined } from '@ant-design/icons'
-import { TitleComponent, Header, DataHeader, Legend } from './styled'
+import { 
+    ModalMolecule, 
+    TitleComponent, 
+    Header, 
+    DataHeader, 
+    Legend} from './styled'
 
-export const CardDetails = ({projectName, job, description, color, labName, ...props}) => {
+export const ModalDetails = ({projectName, job, description, color, labName, visible, onOk, onCancel, ...props}) => {
   return <>
-        <CardMolecule
-            hoverable
+        <ModalMolecule
+            visible={ visible }
+            closable={false}
+            footer={null}
             {...props}
         >
             <Header>
@@ -21,11 +27,11 @@ export const CardDetails = ({projectName, job, description, color, labName, ...p
             <TitleComponent level={5}>{ job }</TitleComponent>
             <Text>{ description }</Text>
             <Legend>
-                <ButtonLink><CloseOutlined /></ButtonLink>
-                <ButtonLink>Ver</ButtonLink>
+                <ButtonLink onClick={ onCancel } ><CloseOutlined /></ButtonLink>
+                <ButtonLink onClick={ onOk }>Ver</ButtonLink>
             </Legend>
-        </CardMolecule>
+        </ModalMolecule>
   </>;
 };
 
-export default CardDetails;
+export default ModalDetails;

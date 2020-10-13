@@ -11,12 +11,13 @@ import {
 import Icon from '@ant-design/icons'
 import {ReactComponent as Logo} from '../../../styles/images/logo/Logo.svg'
 
-export const CardSelection = ({projectName, job, description, colors, labName, ...props}) => {
+export const CardSelection = ({projectName, job, description, colors, labName, onClick, ...props}) => {
     return <div>
         <CardMolecule
             hoverable
             primary={ colors.primary }
             secundary={ colors.secundary }
+            onClick={ onClick }
             {...props}
         >
             <Header>
