@@ -56,9 +56,9 @@ function Pages() {
       </div>
       <div>.</div>
       <div>
-        <Progress color={ colors.progress.progress } percent={33} message="Em andamento" phase={1} status="active"/>
-        <Progress color={ colors.progress.classified } percent={33} message="Passou" phase={1} status="sucess"/>
-        <Progress color={ colors.progress.declassified } percent={66} message="Não passou" phase={2} status="exception"/>
+        <Progress color={ colors.progress.progress } percent={33} phase={1} status="active"/>
+        <Progress color={ colors.progress.classified } percent={33} phase={1} status="success"/>
+        <Progress color={ colors.progress.declassified } percent={66} phase={2} status="exception"/>
       </div>
       <div>.</div>
     </div>

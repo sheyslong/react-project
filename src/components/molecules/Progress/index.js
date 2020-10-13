@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Title } from '../../atoms'
 import { ProgressComponent, Graph } from './styled'
 
-export const Progress = ({ color, percent, phase, message, status}) => {
+export const Progress = ({ color, percent, phase, status}) => {
+    const Message = () => {
+        if(status === "success") {
+            return "Passou"
+        } else if(status === "exception") {
+            return "Não passou"
+        } else if(status === "active") {
+            return "Em andamento"
+        }
+        return "Não Iniciada"
+    }
+
+    const message = Message()
+
     return <ProgressComponent>
         <Graph 
             type="circle"
