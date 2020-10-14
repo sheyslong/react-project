@@ -47,3 +47,42 @@ export default {
         noProgress: "#cccccc",
     }
 }
+const BACKEND = "Back-End"
+const FRONTEND = "Front-End"
+const TESTER = "Tester"
+const FULLSTACK = "FullStack"
+
+export const color = ( job ) => {
+    switch (job) {
+        case BACKEND:
+            return { 
+                primary: "#2F80FF",
+                secundary: "#3CCBFF",
+                icon: "#9de5ff"
+            }          
+        case FRONTEND:
+            return {
+                primary: "#FF4BA7",
+                secundary: "#FFDA64",
+                icon: "#ffeeb6"
+            }  
+        case TESTER:
+            return {
+                primary: "#6F085A",
+                secundary: "#FE3D6C",
+                icon: "#ff82ab"
+            }
+        case FULLSTACK:
+            return {
+                primary: "#6B2CF5",
+                secundary: "#D450E6",
+                icon: "#ef7dff"
+            }
+        default:
+            return {
+                primary: "#311D3F",
+                secundary: "#E23E57",
+                icon: "#ff7d90"
+            }
+    }   
+}

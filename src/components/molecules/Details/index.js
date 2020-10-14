@@ -1,37 +1,50 @@
 import React from 'react'
-import { Text, ButtonLink } from '../../atoms'
-import { Avatar } from 'antd'
-import { UserOutlined, CloseOutlined } from '@ant-design/icons'
+import { Text, Button } from '../../atoms'
+import Icon, { CloseOutlined } from '@ant-design/icons'
 import { 
     ModalMolecule, 
     TitleComponent, 
     Header, 
+    LogoComponent,
     DataHeader, 
     Legend} from './styled'
+import {ReactComponent as Logo} from '../../../styles/images/logo/Logo.svg'
 
-export const ModalDetails = ({projectName, job, description, color, labName, visible, onOk, onCancel, ...props}) => {
+export const Details = ({projectName, job, description, colors, labName, visible, onOk, onCancel, ...props}) => {
   return <>
         <ModalMolecule
             visible={ visible }
-            closable={false}
             footer={null}
-            {...props}
-        >
-            <Header>
-                <Avatar size={64} icon={<UserOutlined />} />
+            primary={ colors.primary }
+            secundary={ colors.secundary }
+            onCancel={ onCancel }
+            title={
+            <Header
+                primary={ colors.primary }
+                secundary={ colors.secundary }
+            >
+                <LogoComponent 
+                    size={64} 
+                    icon={
+                        <Icon component={Logo} style={{ color: colors.icon }}/>
+                    } 
+                />                
                 <DataHeader>
                     <TitleComponent level={2}>{ projectName }</TitleComponent>
                     <TitleComponent level={5}>{ labName }</TitleComponent>
-                </DataHeader>            
+                </DataHeader>
             </Header>
+            }
+            {...props}
+        >
+            
             <TitleComponent level={5}>{ job }</TitleComponent>
             <Text>{ description }</Text>
             <Legend>
-                <ButtonLink onClick={ onCancel } ><CloseOutlined /></ButtonLink>
-                <ButtonLink onClick={ onOk }>Ver</ButtonLink>
+                <Button onClick={ onOk }>Ver Detalhes</Button>
             </Legend>
         </ModalMolecule>
   </>;
 };
 
-export default ModalDetails;
+export default Details;

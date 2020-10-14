@@ -11,9 +11,8 @@ import {
 import Icon from '@ant-design/icons'
 import {ReactComponent as Logo} from '../../../styles/images/logo/Logo.svg'
 
-export const CardSelection = ({projectName, job, description, colors, labName, onClick, ...props}) => {
-    return <div>
-        <CardMolecule
+export const Selection = ({projectName, job, description, colors, labName, onClick, ...props}) => {
+    return <CardMolecule
             hoverable
             primary={ colors.primary }
             secundary={ colors.secundary }
@@ -42,8 +41,7 @@ export const CardSelection = ({projectName, job, description, colors, labName, o
             <Legend>
                 <LabNameComponent>{ labName }</LabNameComponent> 
             </Legend>
-        </CardMolecule>
-  </div>;
+        </CardMolecule>;
 };
 
-export default CardSelection;
+export default Selection;

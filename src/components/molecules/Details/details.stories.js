@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Details from './index'
 import { Button } from '../../atoms'
+import { color } from '../../../styles/colors';
 
 export default {
   title: 'Modal Details Molecule Component',
@@ -23,6 +24,7 @@ const ModalDetails = () => {
           projectName={ title } 
           job={ job } 
           description={ description } 
+          colors={ color(job) }
           labName={ labName } 
           visible={ open }
           onOk={() => setOpen(false)}

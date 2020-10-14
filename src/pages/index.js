@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Input, Label, Link, Title, Text } from '../components/atoms'
-import { CardError, CardSelection, Details, Progress } from '../components/molecules'
+import { CardError, Selection, Details, Progress } from '../components/molecules'
 import { colors } from '../styles/colors';
 
 function Pages() {
@@ -45,7 +45,7 @@ function Pages() {
       <CardError error="Ops! Tivemos um problema com o Serviço." message="Aguarde e tente novamente em alguns instantes!"/>
       <div>.</div>
       <div>
-        <CardSelection 
+        <Selection 
           projectName={ title } 
           job={ "FullStack" } 
           description={ description } 
@@ -53,7 +53,7 @@ function Pages() {
           colors={ colors.fullstack }
           onClick={() => setOpen(true)}
           />
-        <CardSelection 
+        <Selection 
           projectName={ title } 
           job={ "Front-end" } 
           description={ description } 
@@ -61,7 +61,7 @@ function Pages() {
           colors={ colors.frontEnd }
           onClick={() => setOpen(true)}
           />
-        <CardSelection 
+        <Selection 
           projectName={ title } 
           job={ "Back-end" } 
           description={ description } 
@@ -69,7 +69,7 @@ function Pages() {
           colors={ colors.backEnd }
           onClick={() => setOpen(true)}
           />
-        <CardSelection 
+        <Selection 
           projectName={ title } 
           job={ "Tester" } 
           description={ description } 
@@ -84,17 +84,6 @@ function Pages() {
         <Progress color={ colors.progress.classified } percent={33} phase={1} status="success"/>
         <Progress color={ colors.progress.declassified } percent={66} phase={2} status="exception"/>
       </div>
-      <div>.</div>
-      <Details
-        projectName="Nome do Projeto" 
-        job="Vaga" 
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." 
-        labName="Nome do Laboratório"
-        visible={open}
-        onOk={() => setOpen(false)}
-        onCancel={() => setOpen(false)}
-      />
-      <div>.</div>
     </div>
   )
 }
