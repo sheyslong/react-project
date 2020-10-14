@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, Button } from '../../atoms'
-import Icon, { CloseOutlined } from '@ant-design/icons'
+import Icon from '@ant-design/icons'
 import { 
     ModalMolecule, 
     TitleComponent, 
@@ -37,7 +37,6 @@ export const Details = ({projectName, job, description, colors, labName, visible
             }
             {...props}
         >
-            
             <TitleComponent level={5}>{ job }</TitleComponent>
             <Text>{ description }</Text>
             <Legend>
