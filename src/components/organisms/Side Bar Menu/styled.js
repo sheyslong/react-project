@@ -4,7 +4,9 @@ import { colors } from '../../../styles/colors';
 import { Drawer } from 'antd';
 
 export const SideBar = styled(Drawer)`
-  padding: 0px !important;
+    .ant-drawer-body {
+        padding: 0px !important;
+    }
 `;
 
 export const MenuComponent = styled(Menu).attrs(style => {})`
