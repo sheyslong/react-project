@@ -6,6 +6,9 @@ export default {
     white: '#FFFFFF',
     ice: '#EEEEEE',
     gray: '#cccccc',
+    yellow: "#FFDA64",
+    black: '#000000',
+    icon: "#ff82ab",
     fullstack: {
         primary: "#6B2CF5",
         secundary: "#D450E6",

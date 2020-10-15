@@ -1,14 +1,12 @@
 import React from 'react'
-import { Text, Button } from '../../atoms'
-import Icon from '@ant-design/icons'
+import { Text, Button, Avatar } from '../../atoms'
 import { 
     ModalMolecule, 
     TitleComponent, 
+    Job,
     Header, 
-    LogoComponent,
     DataHeader, 
     Legend} from './styled'
-import {ReactComponent as Logo} from '../../../styles/images/logo/Logo.svg'
 
 export const Details = ({projectName, job, description, colors, labName, visible, onOk, onCancel, ...props}) => {
   return <>
@@ -23,12 +21,7 @@ export const Details = ({projectName, job, description, colors, labName, visible
                 primary={ colors.primary }
                 secundary={ colors.secundary }
             >
-                <LogoComponent 
-                    size={64} 
-                    icon={
-                        <Icon component={Logo} style={{ color: colors.icon }}/>
-                    } 
-                />                
+                <Avatar colors={ colors }/>            
                 <DataHeader>
                     <TitleComponent level={2}>{ projectName }</TitleComponent>
                     <TitleComponent level={5}>{ labName }</TitleComponent>
@@ -37,10 +30,10 @@ export const Details = ({projectName, job, description, colors, labName, visible
             }
             {...props}
         >
-            <TitleComponent level={5}>{ job }</TitleComponent>
+            <Job color level={4}>{ job }</Job>
             <Text>{ description }</Text>
             <Legend>
-                <Button onClick={ onOk }>Ver Detalhes</Button>
+                <Button color={ colors.icon } onClick={ onOk }>Ver Detalhes</Button>
             </Legend>
         </ModalMolecule>
   </>;

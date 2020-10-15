@@ -3,7 +3,6 @@ import 'antd/dist/antd.css'
 import { colors } from '../../../styles/colors'
 import { Title, Text, Label } from '../../atoms'
 import { Card } from 'antd'
-import { Avatar } from 'antd'
 
 export const CardMolecule = styled(Card)`
     width: 300;
@@ -43,7 +42,3 @@ export const Legend = styled.div`
     flex-direction: row-reverse;
 `;
 
-export const LogoComponent = styled(Avatar)`
-    background: none;
-    font-size: 54px !important;
-`;

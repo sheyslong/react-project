@@ -17,8 +17,6 @@ const ModalDetails = () => {
   const [open, setOpen] = useState(false)
 
   return<>
-    {  
-      <>
         <Button onClick={() => setOpen(true)}>Open Details</Button>
         <Details 
           projectName={ title } 
@@ -30,8 +28,6 @@ const ModalDetails = () => {
           onOk={() => setOpen(false)}
           onCancel={() => setOpen(false)}/>
       </>
-    }
-  </>
 }
 
 export const ToStorybookDetails = () => <ModalDetails/>;

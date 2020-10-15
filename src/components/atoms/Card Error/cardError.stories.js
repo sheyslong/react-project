@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import CardError from './index'
 import { Button } from '../../atoms'
-
 export default {
   title: 'Card Error Molecule Component',
   component: CardError,

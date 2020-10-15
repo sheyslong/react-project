@@ -6,10 +6,8 @@ import {
     LabNameComponent, 
     Header, 
     DataHeader, 
-    Legend, 
-    LogoComponent } from './styled'
-import Icon from '@ant-design/icons'
-import {ReactComponent as Logo} from '../../../styles/images/logo/Logo.svg'
+    Legend } from './styled'
+import { Avatar } from '../../atoms'
 
 export const Selection = ({projectName, job, description, colors, labName, onClick, ...props}) => {
     return <CardMolecule
@@ -20,11 +18,7 @@ export const Selection = ({projectName, job, description, colors, labName, onCli
             {...props}
         >
             <Header>
-                <LogoComponent 
-                    size={64} 
-                    icon={
-                        <Icon component={Logo} style={{ color: colors.icon }}/>
-                    } />
+                <Avatar colors={ colors }/>
                 <DataHeader>
                     <TitleComponent 
                         level={3}>{ projectName }

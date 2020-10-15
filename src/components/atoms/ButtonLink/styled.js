@@ -5,14 +5,14 @@ import 'antd/dist/antd.css';
 import { Button } from 'antd';
 
 export const ButtonAtom = styled(Button)`
-    color: ${ colors.pink };
+    color: ${ ({color}) => color? color : colors.pink };
     &:hover {
-        color: ${ colors.pink };
+        color: ${ ({color}) => color? color : colors.pink };
     }
     &:focus {
-        color: ${ colors.pink } ;      
+        color: ${ ({color}) => color? color : colors.pink } ;      
     }
     &:click {
-        color: ${ colors.pink };    
+        color: ${ ({color}) => color? color : colors.pink };    
     }
 `;
