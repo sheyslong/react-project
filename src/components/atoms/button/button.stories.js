@@ -6,9 +6,7 @@ export default {
   component: Button,
 };
 
-export const ToStorybookButton = () => <>
-                                        <Button type="primary">Primary</Button>
-                                        </>;
+export const ToStorybookButton = () => <Button type="primary">Primary</Button>
 
 ToStorybookButton.story = {
   name: 'Button Type',
