@@ -2,7 +2,7 @@
 
 Basis for a ReactJS project with the configurations described below.
 
-## Recursos da Aplicação
+## Application features
 
 ### Font
 
